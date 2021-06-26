@@ -1,4 +1,8 @@
 % test script for 2D image model
+% image has 4 different types of shapes
+% each shape is repeated multiple types (with different roto-translation)
+% consists only CoShaRP results
+
 
 clc; clearvars; close all;
 
@@ -59,11 +63,13 @@ y = A*xTrue;
 
 %% CoShaRP
 
-K  = sum(nshape);
+K  = sum(nshape);   % number of shapes
 
-opt.MaxIter = 1e5;
+% optimization options
+opt.MaxIter = 1e6;
 opt.progTol = 1e-8;
 opt.optTol  = 1e-8;
+opt.fTol    = 1e-8;
 opt.verbose = 1;
 
 [zCSR,~,hist] = CoShaRP(A,D,y,K,opt);
