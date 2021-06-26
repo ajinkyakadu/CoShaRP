@@ -1,8 +1,8 @@
 # CoShaRP
 Convex Shape Recovery Program for Single-shot tomography
 
-<p align="right">
-<img align="right" width="500" height="300" src="/extras/ex3d.png" >
+<p align="center">
+<img align="center" width="800" height="300" src="/extras/ex3d.png" >
 </p>
 
 This MATLAB toolbox computes an image composed of **K** copies of shapes from its single-shot X-ray tomographic projections. It assumes that the shapes are known, and creates a dictionary consisting of extensive roto-translations copies of the shapes. The algorithmic framework, called CoShaRP, converts the estimation of roto-translation parameters of shapes to computing the dictionary coefficients with imposed constraints (here, K-simplex constraints).
