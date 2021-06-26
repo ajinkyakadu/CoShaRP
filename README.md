@@ -14,7 +14,7 @@ We solve the optimization problem
 
 to compute the shape coefficients. Here, **A** is a tomography matrix (which is either fan-beam or cone-beam) of size *m* times *n*, **y** consists of *m* tomographic measurements, **Ψ** is a shape dictionary of size *n* times *p*, and **z** is a shape coefficient vector of length *p*. K are the number of shapes present in the target image. Once we obtain an optimal estimate of shape coefficient vector, we get an image using  
 
-![equation](/extras/image_form_eq.png)
+<img src="/extras/image_form_eq.png" alt="drawing" width="400"/>
 
 
 ## Authors
