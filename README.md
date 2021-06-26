@@ -8,9 +8,12 @@ Convex Shape Recovery Program for Single-shot tomography
 This MATLAB toolbox computes an image composed of **K** copies of shapes from its single-shot X-ray tomographic projections. It assumes that the shapes are known, and creates a dictionary consisting of extensive roto-translations copies of the shapes. The algorithmic framework, called CoShaRP, converts the estimation of roto-translation parameters of shapes to computing the dictionary coefficients with imposed constraints (here, K-simplex constraints).
 
 ## Problem description  
-We solve the optimization problem
+We solve the optimization problem  
+
 ![equation](/extras/equation.png)
-to compute the shape coefficients. Here, **A** is a tomography matrix (which is either fan-beam or cone-beam) of size *m* times *n*, **y** consists of *m* tomographic measurements, **Ψ** is a shape dictionary of size *n* times *p*, and **z** is a shape coefficient vector of length *p*. K are the number of shapes present in the target image. Once we obtain an optimal estimate of shape coefficient vector, we get an image using
+
+to compute the shape coefficients. Here, **A** is a tomography matrix (which is either fan-beam or cone-beam) of size *m* times *n*, **y** consists of *m* tomographic measurements, **Ψ** is a shape dictionary of size *n* times *p*, and **z** is a shape coefficient vector of length *p*. K are the number of shapes present in the target image. Once we obtain an optimal estimate of shape coefficient vector, we get an image using  
+
 ![equation](/extras/image_form_eq.png)
 
 
