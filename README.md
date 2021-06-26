@@ -10,11 +10,11 @@ This MATLAB toolbox computes an image composed of **K** copies of shapes from it
 ## Problem description  
 We solve the optimization problem  
 
-![equation](/extras/equation.png)
+<img src="/extras/equation.png" alt="drawing" width="800" align="center"/>
 
 to compute the shape coefficients. Here, **A** is a tomography matrix (which is either fan-beam or cone-beam) of size *m* times *n*, **y** consists of *m* tomographic measurements, **Ψ** is a shape dictionary of size *n* times *p*, and **z** is a shape coefficient vector of length *p*. K are the number of shapes present in the target image. Once we obtain an optimal estimate of shape coefficient vector, we get an image using  
 
-<img src="/extras/image_form_eq.png" alt="drawing" width="400"/>
+<img src="/extras/image_form_eq.png" alt="drawing" width="400" align="center"/>
 
 
 ## Authors
