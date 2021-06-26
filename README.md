@@ -5,11 +5,13 @@ Convex Shape Recovery Program for Single-shot tomography
 <img align="right" width="200" height="200" src="/extras/cone-beam.png" >
 </p>
 
-This MATLAB toolbox computes an image composed of **K** copies of shapes from its single-shot X-ray tomographic projections. It assumes that the shapes are known, and creates a dictionary consisting of extensive roto-translations copies of the shapes. CoShaRP converts the estimation of roto-translation parameters of shapes to computing the dictionary coefficients with imposed constraints (here, K-simplex constraints). 
+This MATLAB toolbox computes an image composed of **K** copies of shapes from its single-shot X-ray tomographic projections. It assumes that the shapes are known, and creates a dictionary consisting of extensive roto-translations copies of the shapes. The algorithmic framework, called CoShaRP, converts the estimation of roto-translation parameters of shapes to computing the dictionary coefficients with imposed constraints (here, K-simplex constraints).
 
 ## Problem description  
-
-
+We solve the optimization problem
+![equation](/extras/equation.png)
+to compute the shape coefficients. Here, **A** is a tomography matrix (which is either fan-beam or cone-beam) of size *m* times *n*, **y** consists of *m* tomographic measurements, **Ψ** is a shape dictionary of size *n* times *p*, and **z** is a shape coefficient vector of length *p*. K are the number of shapes present in the target image. Once we obtain an optimal estimate of shape coefficient vector, we get an image using
+![equation](/extras/image_form_eq.png)
 
 
 ## Authors
@@ -24,8 +26,9 @@ This framework has been tested on Matlab 2020b.
 
 ## Usage  
 The examples scripts are  
-1. **test2D** : 2D image with circular disks as shape
-2. **test2D_4shapes** : 2D image with 4 different shapes
+1. **test2D** : single-shot fan-beam tomography on 2D image with circular disks as shape
+2. **test2D_4shapes** : single-shot fan-beam tomography on 2D image with 4 different shapes  
+3. **test3d** : single-shot cone-beam tomography on 3D image with spheres
 
 ![image](/results/test2D_4shapes/final.png)
 
