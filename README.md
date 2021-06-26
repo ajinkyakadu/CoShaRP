@@ -18,7 +18,7 @@ to compute the shape coefficients. Here, **A** is a tomography matrix (which is 
 
 
 ## Authors
-* Ajinkya Kadu ([ajinkyakadu125@gmail.nl](mailto:ajinkyakadu125@gmail.com))  
+* Ajinkya Kadu ([ajinkyakadu125@gmail.com](mailto:ajinkyakadu125@gmail.com))  
 
 ## License
 You can distribute the software as you wish.
