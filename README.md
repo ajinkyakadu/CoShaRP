@@ -31,9 +31,10 @@ This framework has been tested on Matlab 2020b.
 The examples scripts are  
 1. **test2D** : single-shot fan-beam tomography on 2D image with circular disks as shape
 2. **test2D_4shapes** : single-shot fan-beam tomography on 2D image with 4 different shapes  
-3. **test3d** : single-shot cone-beam tomography on 3D image with spheres
+3. **test3d** : single-shot cone-beam tomography on 3D image with spheres  
 
-![image](/results/test2D_4shapes/final.png)
+<img src="/extras/ex_4shapes.png" alt="drawing" width="800" align="center"/>
+
 
 ## Citation  
 If you use this code, please use the following citation
